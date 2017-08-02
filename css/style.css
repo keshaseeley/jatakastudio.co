@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+.gradient {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100wh;
+  height: 100vh;
+  color: #fff;
+  background: linear-gradient(-45deg,
+    #3D4FBC, /* indigo light*/
+    #273299, /* indigo dark */
+    #72CFFF  /* robin's egg blue */
+  );
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 60s ease infinite;
+  -moz-animation: Gradient 60s ease infinite;
+  animation: Gradient 60s ease infinite;
+  opacity: .8;
+}
+@-webkit-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@-moz-keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+@keyframes Gradient {
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+.flex-container {
+  width: 100wh;
+  height: 100vh;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+}
+
+.logo {
+  /*font-family: 'Kaushan Script', cursive;*/
+  font-family: 'Berkshire Swash', cursive;
+  font-size: 2.5em;
+  display: block;
+  clear: both;
+}
+
+.headline {
+  /*font-family: 'Convergence', sans-serif;*/
+  font-family: 'Poppins', sans-serif;
+  font-size: .55em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.section-text {
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: .55em;
+  font-weight: 300;
+  letter-spacing: 1px;}
+
+.section-title {
+  color: #FFF;
+  font-size: 1.4em;
+  font-weight: 300;
+  border-bottom: 1px dotted #A4BEC9;
+  padding-bottom: 6px;
+}
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+.icon {
+  color: #FFF;
+  font-size: 1.6em;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.column-2 {
+  width: 50%;
+  float: left;
+}
+.column-3 {
+  width: 33%;
+  float: left;
+}
+.column-4 {
+  width: 25%;
+  float: left;
+}
+
+@media (max-width: 800px) {
+  .column-2 {
+    width: 100%;
+  }
+  .column-3 {
+    width: 100%;
+  }
+  .column-4 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    font-size: 1.5em;
+  }
+  .headline {
+    font-size: .7em;
+  }
+}
